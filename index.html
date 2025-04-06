@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuroScope AR App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="logo-heading">
+      <img src="brain-marker.png" alt="NeuroScope Logo" class="logo" />
+      <h1>NeuroScope</h1>
+    </div>
+    <p class="tagline">Interactive AR Brain Exploration</p>
+    <a href="#download" class="cta-button">Download App</a>
+  </header>
+  
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2>About NeuroScope</h2>
+    <p>
+      NeuroScope is an Augmented Reality app that helps users visualize and understand the human brain.
+      Designed especially for educational and awareness purposes, it displays 3D brain models with automatic labels and informative descriptions.
+    </p>
+  </section>
+
+  <!-- Features -->
+  <section class="section light" id="features">
+    <h2>Features</h2>
+    <ul>
+      <li>Real-time AR brain model visualization</li>
+      <li>Auto-labeling of major brain parts</li>
+      <li>Descriptions facing the camera</li>
+      <li>Beginner-friendly UI and design</li>
+    </ul>
+  </section>
+
+  <!-- Screenshots
+  <section class="section" id="screenshots">
+    <h2>App Screenshots</h2>
+    <div class="gallery">
+      <img src="screenshots/ss1.png" alt="Screenshot 1" />
+      <img src="screenshots/ss2.png" alt="Screenshot 2" />
+      <img src="screenshots/ss3.png" alt="Screenshot 3" />
+    </div>
+  </section> -->
+
+  <!-- Download -->
+  <section class="section light" id="download">
+    <h2>Download the App</h2>
+    <p>Click below to download the latest APK of NeuroScope for Android devices.</p>
+    <a href="NeuroScope.apk" class="cta-button">Download APK</a>
+    <p class="small-note">Make sure to allow installs from unknown sources in settings.</p>
+  </section>
+
+  <section class="section marker-section" id="marker">
+    <div class="marker-card">
+      <h2>🎯 Download Image Marker</h2>
+      <p>Point your camera at this marker to experience the interactive brain model in AR.</p>
+      <!-- <img src="images/brain-marker.jpg" alt="AR Marker" class="marker-image"> -->
+      <a href="brain-marker.png" download class="btn-gradient">Download Marker Image</a>
+    </div>
+  </section>
+  
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">
+        <!-- <img src="images/step1.png" alt="Step 1: Open the App" /> -->
+        <p><strong>Step 1:</strong> Launch the NeuroScope app on your phone.</p>
+      </div>
+      <div class="step">
+        <!-- <img src="images/step2.png" alt="Step 2: Scan the Marker" /> -->
+        <p><strong>Step 2:</strong> Point your camera at the marker image.</p>
+      </div>
+      <div class="step">
+        <!-- <img src="images/step3.png" alt="Step 3: Interact" /> -->
+        <p><strong>Step 3:</strong> Watch and learn as the brain model appears with labels and audio descriptions!</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section" id="brain-parts">
+    <h2>Brain Parts & Functions</h2>
+    <div class="accordion">
+      <div class="accordion-item">
+        <button class="accordion-header">🧠 Frontal Lobe</button>
+        <div class="accordion-body">
+          <p>Responsible for cognitive functions like decision making, problem solving, and control of voluntary movement.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">🧠 Parietal Lobe</button>
+        <div class="accordion-body">
+          <p>Processes sensory information such as touch, temperature, and pain.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">🧠 Temporal Lobe</button>
+        <div class="accordion-body">
+          <p>Involved in auditory processing, memory, and speech comprehension.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">🧠 Occipital Lobe</button>
+        <div class="accordion-body">
+          <p>Primarily responsible for visual processing and interpretation.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">🧠 Cerebellum</button>
+        <div class="accordion-body">
+          <p>Coordinates voluntary movements such as posture, balance, coordination, and speech.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 NeuroScope Project. Created with ❤️ by Kosada Bhat and Diya Kote</p>
+  </footer>
+</body>
+<script>
+  const headers = document.querySelectorAll('.accordion-header');
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const body = header.nextElementSibling;
+      body.style.display = body.style.display === 'block' ? 'none' : 'block';
+    });
+  });
+</script>
+
+</html>
