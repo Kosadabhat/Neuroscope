@@ -42,10 +42,10 @@
   /* === Hero Section === */
   .hero {
     text-align: center;
-    padding: 100px 20px;
+    padding: 50px 20px;
     color: white;
     background: linear-gradient(-45deg, #0d6580, #154081, #1f2666, #1e3c72);
-    background-size: 400% 400%;
+    background-size: 100% 100%;
     animation: gradientBG 10s ease infinite;
     position: relative;
   }
@@ -319,4 +319,77 @@
     background-color: #f9f9f9;
     color: #333;
   }
-  
+ /* === Navbar Styling === */
+.navbar {
+  width: 100%;
+  background: rgba(30, 60, 114, 0.95); /* Deep blue semi-transparent */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 4px;
+  position: relative;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+.nav-links li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-links li a:hover::after {
+  width: 100%;
+}
+
+.nav-links li a:hover {
+  color: #d1ecff;
+}
+
+/* === Responsive Styling === */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .nav-links li a {
+    font-size: 1.1rem;
+    padding: 10px;
+  }
+}
